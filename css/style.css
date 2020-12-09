@@ -1,17 +1,24 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    display: flex;
-    flex-direction: column;
 }
 button[type="submit"]{
     border:none;
     background-color:#17b0c7;
+    color: white;
 }
-nav.flexbox {
+button[type="button"]{
+    border: none;
+    background: transparent;
+    font-size: 0.5em;
+    color:hsl(0, 0%, 75%);
+}
+nav.flexbox{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+.flexbox, .activation, .section-1, .info, .activation, .wrap {
+    padding-left:10em;
 }
 nav.flexbox ul {        
     display: flex;
@@ -27,11 +34,15 @@ nav.flexbox ul li:last-child {
 section.section-1{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .section-1:first-child{
     margin-top: 30px;
 }
-.section-1 h2, 
+.section-1 h1{
+    font-size: 2.5em;
+    font-weight: 700;
+} 
 .activation h2, 
 .main>h2{
     font-size: 2em;
@@ -39,22 +50,61 @@ section.section-1{
 .cards h2{
     font-size: 1.2em;
 }
+
 .shortener{
-    height: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 5em;
+    width:80%;
+    margin: 0 auto;
+    background: hsl(257, 27%, 26%);
     background-image: url("../images/bg-shorten-desktop.svg");
-    background-size: contain;
+    background-size: cover;
 }
-.info {
+.shortener{
+    position:relative;
+    top:2.5em;
+    border-radius: 20px;
+}
+.info{
+    height:50%;
+    background: hsl(0, 0%, 75%);
     text-align: center;
-
+    padding-top: 10em;
 }
 .cards{
     display: flex;
     flex-direction: row;
+    padding-bottom: 7em;
     
+}
+.cards-img{
+    margin-top: 2em;
+}
+.cards-img div:nth-last-of-type(3){
+    position: relative;
+    top:2.5em;
+    right: 8em;
+    z-index: 10;
+}
+.cards-img div:nth-last-of-type(2){
+    position: relative;
+    top:5.5em;
+    right: 8em;
+    z-index: 10;
+}
+.cards-img div:nth-last-of-type(1){
+    position: relative;
+    top:7.5em;
+    right: 8em;
+    z-index: 10;
+}
+.card-1,
+.card-2,
+.card-3{
+    background-color: white;
+    margin:1em;
 }
 .cards div:nth-last-of-type(3){
     position: relative;
@@ -68,31 +118,47 @@ section.section-1{
     top:5em;
 }
 .activation{
+    background: hsl(257, 27%, 26%);
     background-image: url("../images/bg-boost-desktop.svg");
-    background-size: contain;
+    background-size: cover;
     text-align: center;
-    margin-top: 7em;
-    height: 5em;
+    height: 12em;
+    color:white;
 }
 .wrap  *{
     color:white;
 }
 .wrap{
-    background-color: black;
+    background-color: hsl(260, 8%, 14%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 4em;
+    height: 11em;
 }
 .wrap h2:first-child{
     margin-right: 5em;
+    font-weight: 700;
 }
-.cards div img{
-    position: relative;
-    bottom:1em;
-    right:2em;
+.cards-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.cards-img div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 5em;
+    width: 5em;
+    height: 5em;
 }
 .cards div{
     padding-top: 3em;
     background-color: white;
+}
+li a{
+    font-size: 0.5em;
+    color:hsl(0, 0%, 75%);
 }
