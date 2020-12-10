@@ -18,7 +18,7 @@ nav.flexbox{
     justify-content: space-between;
 }
 .flexbox, .activation, .section-1, .info, .activation, .wrap {
-    padding-left:10em;
+    padding:0 8em;
 }
 nav.flexbox ul {        
     display: flex;
@@ -55,17 +55,25 @@ section.section-1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5em;
-    width:80%;
+    height: 7em;
+    width:75%;
+    position:relative;
+    top:3.5em;
+    border-radius: 10px;
     margin: 0 auto;
     background: hsl(257, 27%, 26%);
     background-image: url("../images/bg-shorten-desktop.svg");
     background-size: cover;
 }
-.shortener{
-    position:relative;
-    top:2.5em;
-    border-radius: 20px;
+.shortener input{
+    border-radius: 0.8em;
+    width:40em;
+    height: 3em;
+}
+.shortener button{
+    border-radius: 0.8em;
+    width: 8.5em;
+    height: 3.5em;
 }
 .info{
     height:50%;
@@ -76,54 +84,111 @@ section.section-1{
 .cards{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 7em;
     
+}
+.cards div{
+    padding: 3em 0 2em 0;
+    background-color: white;
+}
+.cards  div:nth-last-of-type(3){
+    position: relative;
+}
+.cards  div:nth-last-of-type(2){
+    position: relative;
+    top: 3em;
+}
+.cards div:nth-last-of-type(1){
+    position: relative;
+    top: 5em;
 }
 .cards-img{
     margin-top: 2em;
 }
 .cards-img div:nth-last-of-type(3){
     position: relative;
-    top:2.5em;
-    right: 8em;
+    top:3em;
+    right: 7em;
     z-index: 10;
 }
 .cards-img div:nth-last-of-type(2){
     position: relative;
-    top:5.5em;
-    right: 8em;
+    top:6em;
+    right: 7em;
     z-index: 10;
 }
 .cards-img div:nth-last-of-type(1){
     position: relative;
-    top:7.5em;
-    right: 8em;
+    top:8em;
+    right: 6em;
     z-index: 10;
 }
+
 .card-1,
 .card-2,
 .card-3{
     background-color: white;
     margin:1em;
-}
-.cards div:nth-last-of-type(3){
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
-.cards div:nth-last-of-type(2){
+/*.cards div:nth-last-of-type(2){
     position: relative;
     top:3em
 }
 .cards div:nth-last-of-type(1){
     position: relative;
-    top:5em;
+     top:5em;
+}*/
+/* .card-1 img,
+.card-2 div,
+.card-3 div{
+    position: absolute;  
+    top: 0;  
+    left: 70;  
+    bottom: 45;
+    margin: auto;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 5em;
+    width: 5em;
+    height: 5em;
+} */
+.cards-img{
+    display: flex;
+    justify-content: space-around;
 }
+.cards-img div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 5em;
+    width: 5em;
+    height: 5em;
+} 
+/* .card-1 div img, 
+.card-2 div img,
+.card-3 div img{
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+} */
 .activation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: hsl(257, 27%, 26%);
     background-image: url("../images/bg-boost-desktop.svg");
     background-size: cover;
-    text-align: center;
     height: 12em;
     color:white;
+    
 }
 .wrap  *{
     color:white;
@@ -139,26 +204,16 @@ section.section-1{
     margin-right: 5em;
     font-weight: 700;
 }
-.cards-img{
+/* .cards-img{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     
-}
-.cards-img div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(257, 27%, 26%);
-    border-radius: 5em;
-    width: 5em;
-    height: 5em;
-}
-.cards div{
-    padding-top: 3em;
-    background-color: white;
-}
+}*/
+
+
 li a{
     font-size: 0.5em;
     color:hsl(0, 0%, 75%);
 }
+ 
