@@ -2,15 +2,22 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
+li a{
+    font-size: 0.7em;
+    color:hsl(0, 0%, 75%);
+}
 button[type="submit"]{
     border:none;
     background-color:#17b0c7;
     color: white;
 }
+button[type="submit"]:active, a:active{
+    background-color: hsl(180, 66%, 49%);
+}
 button[type="button"]{
     border: none;
     background: transparent;
-    font-size: 0.5em;
+    font-size: 0.7em;
     color:hsl(0, 0%, 75%);
 }
 nav.flexbox{
@@ -42,7 +49,7 @@ section.section-1{
 .section-1 h1{
     font-size: 2.5em;
     font-weight: 700;
-} 
+}
 .activation h2, 
 .main>h2{
     font-size: 2em;
@@ -132,29 +139,20 @@ section.section-1{
     margin:1em;
     display: flex;
     flex-direction: column;
-    position: relative;
+    text-align: left;
 }
-/*.cards div:nth-last-of-type(2){
-    position: relative;
-    top:3em
+.card-1 > *,
+.card-2 > *,
+.card-3 > *{
+    padding: 0 1em;
 }
-.cards div:nth-last-of-type(1){
-    position: relative;
-     top:5em;
-}*/
-/* .card-1 img,
-.card-2 div,
-.card-3 div{
-    position: absolute;  
-    top: 0;  
-    left: 70;  
-    bottom: 45;
-    margin: auto;
-    background-color: hsl(257, 27%, 26%);
-    border-radius: 5em;
-    width: 5em;
-    height: 5em;
-} */
+.card-1 h2,
+.card-2 h2,
+.card-3 h2{
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
 .cards-img{
     display: flex;
     justify-content: space-around;
@@ -168,16 +166,6 @@ section.section-1{
     width: 5em;
     height: 5em;
 } 
-/* .card-1 div img, 
-.card-2 div img,
-.card-3 div img{
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto;
-} */
 .activation{
     display: flex;
     flex-direction: column;
@@ -190,6 +178,9 @@ section.section-1{
     color:white;
     
 }
+.activation h2{
+    padding-bottom: 1em;
+}
 .wrap  *{
     color:white;
 }
@@ -199,21 +190,12 @@ section.section-1{
     flex-direction: row;
     justify-content: space-between;
     height: 11em;
+    padding-top:3em;
 }
 .wrap h2:first-child{
     margin-right: 5em;
     font-weight: 700;
 }
-/* .cards-img{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}*/
 
 
-li a{
-    font-size: 0.5em;
-    color:hsl(0, 0%, 75%);
-}
  
