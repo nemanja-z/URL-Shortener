@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
+
 li a{
     font-size: 0.7em;
     color:hsl(0, 0%, 75%);
@@ -24,12 +25,12 @@ nav.flexbox{
     display: flex;
     justify-content: space-between;
 }
-.flexbox, .activation, .info, .activation, .wrap {
+nav.flexbox, .activation, .section-1, .info, .wrap{
     padding:0 8em;
 }
-.section-1{
+/* .section-1{
     padding: 0 0 0 8em;
-}
+} */
 nav.flexbox ul {        
     display: flex;
     align-items: center;
@@ -70,12 +71,12 @@ section.section-1 > *{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 82%;
     height: 7em;
     position:relative;
+    width: 83%;
     top:3.5em;
-    border-radius: 10px;
     margin: 0 auto;
+    border-radius: 10px;
     background: hsl(257, 27%, 26%);
     background-image: url("../images/bg-shorten-desktop.svg");
     background-size: cover;
@@ -106,6 +107,7 @@ section.section-1 > *{
     
 }
 
+
 .cards >div{
     padding: 3em 0 2em 0;
     background-color: white;
@@ -123,19 +125,19 @@ section.section-1 > *{
 }
 .card-1 div{
     position: absolute;
-    bottom:13.5em;
+    bottom:12.5em;
     left: 1em;
     z-index: 10;
 }
 .card-2 div{
     position: absolute;
-    bottom:13.5em;
+    bottom:12.5em;
     left: 1em;
     z-index: 10;
 }
 .card-3 div{
     position: absolute;
-    bottom:13.5em;
+    bottom:12.5em;
     left: 1em;
     z-index: 10;
 }
@@ -145,11 +147,11 @@ section.section-1 > *{
 .card-3{
     background-color: white;
     display: flex;
-    font-size: 0.7em;
+    font-size: 0.9em;
     flex-direction: column;
     text-align: start;
     border-radius: 5px;
-    width:21em;
+    width:30%;
 }
 .card-1 > *,
 .card-2 > *,
