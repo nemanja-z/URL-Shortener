@@ -110,7 +110,7 @@ html {
 	box-sizing: inherit;
 }
 body {
-	min-width: 344px;
+	min-width: 375px;
 }
 /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
 

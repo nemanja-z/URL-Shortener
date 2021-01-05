@@ -2,37 +2,52 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 18px;
 }
-
+hr.navline {
+	border-left: 8px solid gray;
+	width: 90%;
+}
 #hamnav label {
 	display: inline-block;
 	color: rgb(182, 182, 182);
 	background: none;
 	font-style: normal;
 	font-size: 1.2em;
-	padding: 10px;
+	padding: 5px;
 }
 
 #hamitems {
 	background: hsl(257, 27%, 26%);
 }
-#hamitems a,
+/* #hamitems a,
 #hamitems button {
 	box-sizing: border-box;
 	display: block;
 	color: white;
 	width: 80%;
 	font-size: 1.3em;
-	margin: 1em 0;
-}
-/* #hamitems button[type="submit"] {
-	margin: 1em 0;
 } */
+#hamitems a,
+#hamitems button {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	width: 80%;
+	font-size: 1.1em;
+	font-weight: 700;
+	margin: 0.7em 0;
+	border-radius: 5em;
+}
+#hamitems button[type="submit"] {
+	height: 2.5em;
+	line-height: 2.5;
+	background-color: #17b0c7;
+}
 #hamburger {
 	display: none;
 }
 #hamnav {
 	position: absolute;
-	left: 18em;
+	left: 22em;
 }
 #hamitems {
 	display: none;
@@ -44,9 +59,9 @@ body {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	right: 17em;
-	width: 85vw;
-	height: 65vh;
+	right: 21em;
+	width: 23em;
+	height: 19em;
 }
 li a {
 	font-size: 0.7em;
@@ -68,15 +83,24 @@ button[type="button"] {
 	color: hsl(0, 0%, 75%);
 }
 nav.flexbox {
+	padding: 1em;
 	display: flex;
 	justify-content: space-between;
+}
+nav.flexbox h2 {
+	font-weight: bold;
+	font-size: 1.5em;
 }
 section.section-1 {
 	display: flex;
 	flex-direction: column-reverse;
+	padding-left: 2em;
+}
+.section-wrapper {
+	text-align: center;
 }
 .section-1 img {
-	object-fit: contain;
+	object-fit: fill;
 }
 /* nav.flexbox,
 .activation,
@@ -112,25 +136,37 @@ section.section-1 > * {
 	width: 9em;
 	height: 3em;
 }*/
-.section-1 div:first-child {
+/* .section-1 div:first-child {
 	padding: 0 2em;
-}
+} */
 .section-1 h1 {
-	margin-top: 1em;
 	padding-bottom: 0.2em;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 700;
 	text-align: center;
 }
 
 .section-1 p {
+	padding: 0 2em;
+	text-align: center;
 	color: hsl(257, 7%, 63%);
-	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+.section-1 button {
+	width: 13em;
+	height: 3em;
+	border-radius: 5em;
+	font-weight: 700;
+	background-color: #17b0c7;
 }
 
-.activation h2,
+/* .activation h2,
 .main > h2 {
 	font-size: 2em;
+} */
+.shortener-wrapper {
+	padding: 0 1em;
 }
 .shortener {
 	display: flex;
@@ -147,38 +183,48 @@ section.section-1 > * {
 	background-size: cover;
 }
 .shortener input {
-	border-radius: 0.8em;
-	width: 95%;
+	border-radius: 0.5em;
+	width: 90%;
 	height: 3em;
+	margin: 0.8em 0;
 }
 .shortener button {
-	border-radius: 0.8em;
-	width: 95%;
+	border-radius: 0.5em;
+	width: 90%;
 	height: 3.5em;
+	margin: 0 0 0.8em 0;
+	font-weight: 700;
 }
 
 .info {
 	height: 50%;
-	background: hsl(0, 0%, 75%);
+	background: hsl(0, 11%, 95%);
 	text-align: center;
-	padding-top: 10em;
+	padding-top: 7em;
 }
 .main {
 	margin: 0 auto;
 	height: 6em;
 	width: 95%;
+	padding: 0 1em;
+}
+.main h2 {
+	font-weight: 700;
+	margin-bottom: 0.5em;
+	text-align: center;
+	font-size: 1.3em;
 }
 .main p {
 	color: hsl(257, 7%, 63%);
-	font-weight: 700;
 	text-align: center;
+	font-size: 1.1em;
 }
 .cards {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 7em;
-	padding-top: 5em;
+	padding-bottom: 5em;
+	padding-top: 7em;
 }
 
 .cards > div {
@@ -196,20 +242,20 @@ section.section-1 > * {
 }
 .card-1 div {
 	position: absolute;
-	bottom: 13.5em;
-	left: 8.2em;
+	bottom: 14.5em;
+	left: 10em;
 	z-index: 10;
 }
 .card-2 div {
 	position: absolute;
-	bottom: 13.5em;
-	left: 8.2em;
+	bottom: 14em;
+	left: 10em;
 	z-index: 10;
 }
 .card-3 div {
 	position: absolute;
-	bottom: 12.5em;
-	left: 8.2em;
+	bottom: 14.5em;
+	left: 10em;
 	z-index: 10;
 }
 /* hr.line {
@@ -237,7 +283,7 @@ hr.line:last-of-type {
 	display: flex;
 	font-size: 0.9em;
 	flex-direction: column;
-	text-align: start;
+	text-align: center;
 	border-radius: 5px;
 	width: 90%;
 }
@@ -258,7 +304,9 @@ hr.line:last-of-type {
 .card-2 p,
 .card-3 p {
 	color: hsl(0, 0%, 75%);
-	padding-right: 2em;
+	padding: 0 2em;
+	font-size: 1.2em;
+	text-align: center;
 }
 
 .card-1 div,
@@ -284,34 +332,50 @@ hr.line:last-of-type {
 	color: white;
 }
 .activation h2 {
-	padding-bottom: 1em;
+	font-weight: 700;
+	font-size: 1.5em;
+	padding: 0.5em;
+	text-align: center;
 }
 
 .activation button {
-	width: 9em;
+	width: 13em;
 	height: 3em;
+	border-radius: 5em;
+	font-weight: 700;
 }
 .wrap * {
 	color: white;
 	text-align: center;
 }
+.wrap li a {
+	color: hsl(0, 0%, 75%);
+}
 .wrap {
-	background-color: hsl(260, 8%, 14%);
+	background-color: hsl(258, 11%, 18%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 30%;
-	padding-top: 3em;
+	padding: 2em 0;
 }
 .col > p {
 	padding: 1em 0;
+	font-weight: 700;
+}
+.col li {
+	padding: 0.3em 0;
 }
 .wrap h2 {
 	padding-bottom: 1em;
 	font-size: 1.5em;
+	font-weight: 700;
 }
 .wrap > div:last-child {
 	padding-top: 1em;
+}
+.wrap div:last-child a {
+	padding: 0 0.5em;
 }
 /* .wrap h2:first-child {
 	margin-right: 5em;
