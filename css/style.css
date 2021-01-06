@@ -389,5 +389,85 @@ hr.line:last-of-type {
 	width: 3em;
 	border: solid hsl(180, 66%, 49%);
 } */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 668px) {
+	hr.navline {
+		display: none;
+	}
+	nav.flexbox {
+		justify-content: space-around;
+	}
+	#hamitems {
+		display: flex;
+	}
+	#hamitems a {
+		color: white;
+	}
+	#hamnav label,
+	#hamburger {
+		display: none;
+	}
+	section.section-1 {
+		flex-direction: row;
+		padding-left: 1em;
+		justify-content: space-between;
+	}
+	.cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 4em 2em;
+	}
+	.card-1,
+	.card-2,
+	.card-3 {
+		font-size: 0.9em;
+		width: 20%;
+	}
+	hr.line:first-of-type {
+		border-left: none;
+		background-color: hsl(180, 66%, 49%);
+		position: relative;
+		bottom: 1em;
+		height: 0.5em;
+		width: 4em;
+	}
+	hr.line:last-of-type {
+		border-left: none;
+		background-color: hsl(180, 66%, 49%);
+		position: relative;
+		bottom: 1em;
+		height: 0.5em;
+		width: 4em;
+	}
+	.card-2 {
+		position: relative;
+		top: 2em;
+	}
+	.card-3 {
+		position: relative;
+		top: 4em;
+	}
+	.card-1 div {
+		bottom: 19em;
+		left: 3em;
+	}
+	.card-2 div {
+		bottom: 19em;
+		left: 3em;
+	}
+	.card-3 div {
+		bottom: 19em;
+		left: 3em;
+	}
+	.card-1 h2,
+	.card-2 h2,
+	.card-3 h2 {
+		font-size: 1em;
+	}
+	.card-1 p,
+	.card-2 p,
+	.card-3 p {
+		font-size: 0.7em;
+		text-align: start;
+	}
 }
