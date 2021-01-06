@@ -42,8 +42,8 @@ hr.navline {
 	display: none;
 }
 #hamnav {
-	position: absolute;
-	left: 19em;
+	position: relative;
+	right: 1em;
 }
 #hamitems {
 	display: none;
@@ -57,7 +57,7 @@ hr.navline {
 	position: relative;
 	right: 18em;
 	width: 20em;
-	height: 17em;
+	height: 21em;
 }
 li a {
 	font-size: 0.7em;
@@ -97,10 +97,10 @@ section.section-1 {
 	text-align: center;
 	margin-top: 1em;
 }
-.section-1 img {
+/* .section-1 img {
 	object-fit: fill;
 	padding-left: 2em;
-}
+} */
 /* nav.flexbox,
 .activation,
 .section-1,
@@ -139,6 +139,7 @@ section.section-1 > * {
 	padding: 0 2em;
 } */
 .section-1 h1 {
+	color: hsl(257, 27%, 26%);
 	padding-bottom: 0.2em;
 	font-size: 2.5em;
 	font-weight: 700;
@@ -150,7 +151,6 @@ section.section-1 > * {
 	text-align: center;
 	color: hsl(257, 7%, 63%);
 	margin-bottom: 1.5em;
-	font-size: 1.2em;
 }
 .section-1 button {
 	width: 13em;
@@ -210,15 +210,15 @@ section.section-1 > * {
 	padding: 0 1em;
 }
 .main h2 {
-	font-weight: 800;
+	color: hsl(257, 27%, 26%);
+	font-weight: 700;
 	margin-bottom: 0.5em;
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1.4em;
 }
 .main p {
 	color: hsl(257, 7%, 63%);
 	text-align: center;
-	font-size: 1.1em;
 }
 .cards {
 	display: flex;
@@ -241,22 +241,31 @@ section.section-1 > * {
 .cards > div:nth-last-of-type(1) {
 	position: relative;
 }
-.card-1 div {
+.card-1 div,
+.card-2 div,
+.card-3 div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(257, 27%, 26%);
+	border-radius: 5em;
+	width: 5em;
+	height: 5em;
 	position: absolute;
-	bottom: 15.5em;
-	left: 8.7em;
+}
+.card-1 div {
+	bottom: 17.5em;
+	left: 8.5em;
 	z-index: 10;
 }
 .card-2 div {
-	position: absolute;
-	bottom: 15.5em;
-	left: 8.7em;
+	bottom: 17.5em;
+	left: 8.5em;
 	z-index: 10;
 }
 .card-3 div {
-	position: absolute;
-	bottom: 14em;
-	left: 8.7em;
+	bottom: 17.5em;
+	left: 8.5em;
 	z-index: 10;
 }
 /* hr.line {
@@ -281,12 +290,13 @@ hr.line:last-of-type {
 .card-2,
 .card-3 {
 	background-color: white;
+	position: relative;
 	display: flex;
 	font-size: 0.9em;
 	flex-direction: column;
 	text-align: center;
 	border-radius: 5px;
-	width: 90%;
+	width: 22em;
 }
 .card-1 > *,
 .card-2 > *,
@@ -306,21 +316,10 @@ hr.line:last-of-type {
 .card-3 p {
 	color: hsl(0, 5%, 69%);
 	padding: 0 1.5em;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-align: center;
 }
 
-.card-1 div,
-.card-2 div,
-.card-3 div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: hsl(257, 27%, 26%);
-	border-radius: 5em;
-	width: 5em;
-	height: 5em;
-}
 .activation {
 	display: flex;
 	flex-direction: column;
@@ -341,13 +340,16 @@ hr.line:last-of-type {
 
 .activation button {
 	width: 13em;
-	height: 3em;
+	height: 4em;
 	border-radius: 5em;
 	font-weight: 700;
 }
 .wrap * {
 	color: white;
 	text-align: center;
+}
+.wrap svg {
+	margin-bottom: 1em;
 }
 .wrap li a {
 	color: hsl(0, 0%, 75%);
@@ -367,11 +369,9 @@ hr.line:last-of-type {
 .col li {
 	padding: 0.3em 0;
 }
-.wrap h2 {
+/* .wrap svg {
 	padding-bottom: 1em;
-	font-size: 1.5em;
-	font-weight: 700;
-}
+} */
 .wrap > div:last-child {
 	padding-top: 1em;
 }
@@ -389,3 +389,5 @@ hr.line:last-of-type {
 	width: 3em;
 	border: solid hsl(180, 66%, 49%);
 } */
+@media screen and (min-width: 600px) {
+}

@@ -281,7 +281,9 @@ input[type=file],
 button {
 	cursor: pointer;
 }
-
+button[type='submit'] {
+	background-color: hsl(180, 66%, 49%);
+}
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
 button,
 input,
